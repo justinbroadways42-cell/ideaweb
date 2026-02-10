@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForeNest Uganda</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #0b2b33, #020d12);
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 8%;
+    }
+
+    nav a {
+        color: #b6d6db;
+        text-decoration: none;
+        margin: 0 18px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    .sign-btn {
+        background: #0e5c6b;
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        position: relative;
+        margin: 40px 5%;
+        padding: 70px;
+        border-radius: 60px;
+        background: linear-gradient(135deg, #083743, #0a4f5f);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    /* Curved overlay */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 60px;
+        z-index: 0;
+    }
+
+    .hero-content {
+        position: relative;
+        max-width: 55%;
+        z-index: 1;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #d3edf2;
+        margin-bottom: 35px;
+        max-width: 520px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .btn-outline {
+        padding: 14px 26px;
+        border-radius: 40px;
+        border: 1.5px solid #ffffff;
+        background: transparent;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .btn-fill {
+        padding: 14px 30px;
+        border-radius: 40px;
+        background: #e5e5e5;
+        color: #000;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* LOGO CARD */
+    .logo-box {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        border-radius: 40px;
+        background: #04242b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 40px rgba(47, 208, 255, 0.4);
+        z-index: 1;
+    }
+
+    .logo {
+        font-size: 100px;
+        font-weight: 700;
+        color: #35c6dc;
+        letter-spacing: -10px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        .hero-content {
+            max-width: 100%;
+        }
+
+        .logo-box {
+            margin-top: 40px;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Info</a>
+    <a href="team.html">Team</a>
+    <a href="projection.html">Projection</a>
+    <a href="engage.html">Engage</a>
+</nav>
+
+    </nav>
+    <a href="#" class="sign-btn">Sign</a>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>ForeNest Uganda</h1>
+        <p>
+            ForeNest Uganda is here to make Ugandan stories meet quality in modern filming,
+            script development, indigenous cultural involvement and career boost in the
+            entertainment industry.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn-outline">Documentation &gt;</a>
+            <a href="#" class="btn-fill">Get started &gt;</a>
+        </div>
+    </div>
+
+    <div class="logo-box">
+        <img src="logo.png" alt="logo" class="logo-box">
+    </div>
+</section>
+
+</body>
+</html>

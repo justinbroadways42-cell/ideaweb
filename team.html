@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForeNest Uganda | Team</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #0b2b33, #020d12);
+        color: #ffffff;
+    }
+
+    /* NAVBAR */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 8%;
+    }
+
+    nav a {
+        color: #b6d6db;
+        text-decoration: none;
+        margin: 0 18px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    nav a.active {
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .sign-btn {
+        background: #0e5c6b;
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* PAGE HEADER */
+    .page-header {
+        text-align: center;
+        padding: 70px 20px 40px;
+    }
+
+    .page-header h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .page-header p {
+        color: #cde6eb;
+        max-width: 650px;
+        margin: auto;
+        line-height: 1.7;
+    }
+
+    /* TEAM GRID */
+    .team-container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .member {
+        background: linear-gradient(135deg, #083743, #0a4f5f);
+        padding: 30px;
+        border-radius: 30px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        transition: transform 0.3s;
+    }
+
+    .member:hover {
+        transform: translateY(-8px);
+    }
+
+    .avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: #0e5c6b;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .member h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .member span {
+        display: block;
+        font-size: 14px;
+        color: #9fd2dc;
+        margin-bottom: 15px;
+    }
+
+    .member p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #d4edf2;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 25px;
+        color: #8fbfc8;
+        font-size: 14px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        nav {
+            display: none;
+        }
+
+        .page-header h1 {
+            font-size: 34px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+         <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Info</a>
+    <a href="team.html">Team</a>
+    <a href="projection.html">Projection</a>
+    <a href="engage.html">Engage</a>
+</nav>
+
+    </nav>
+    <a href="#" class="sign-btn">Sign</a>
+</header>
+
+<section class="page-header">
+    <h1>Meet Our Team</h1>
+    <p>
+        The creative minds and professionals driving ForeNest Uganda’s vision
+        forward in film, storytelling, and cultural preservation.
+    </p>
+</section>
+
+<section class="team-container">
+    <div class="member">
+        <div class="avatar">A</div>
+        <h2>Alex Kato</h2>
+        <span>Founder & Creative Director</span>
+        <p>
+            Leads creative strategy, storytelling direction, and oversees all
+            film production initiatives at ForeNest Uganda.
+        </p>
+    </div>
+
+    <div class="member">
+        <div class="avatar">M</div>
+        <h2>Maria Namubiru</h2>
+        <span>Head of Script Development</span>
+        <p>
+            Works closely with writers to refine scripts that reflect authentic
+            Ugandan culture and modern cinematic standards.
+        </p>
+    </div>
+
+    <div class="member">
+        <div class="avatar">J</div>
+        <h2>Joseph Okello</h2>
+        <span>Production Manager</span>
+        <p>
+            Manages logistics, filming schedules, and ensures smooth production
+            workflows from concept to final cut.
+        </p>
+    </div>
+
+    <div class="member">
+        <div class="avatar">S</div>
+        <h2>Sarah Atim</h2>
+        <span>Community & Talent Lead</span>
+        <p>
+            Connects emerging talent with opportunities and oversees community
+            engagement and partnerships.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 ForeNest Uganda. All rights reserved.
+</footer>
+
+</body>
+</html>

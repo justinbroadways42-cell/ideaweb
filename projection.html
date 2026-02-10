@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForeNest Uganda | Projection</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #0b2b33, #020d12);
+        color: #ffffff;
+    }
+
+    /* NAVBAR */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 8%;
+    }
+
+    nav a {
+        color: #b6d6db;
+        text-decoration: none;
+        margin: 0 18px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    nav a.active {
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .sign-btn {
+        background: #0e5c6b;
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* PAGE HEADER */
+    .page-header {
+        text-align: center;
+        padding: 70px 20px 40px;
+    }
+
+    .page-header h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .page-header p {
+        color: #cde6eb;
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.7;
+    }
+
+    /* PROJECTION GRID */
+    .projection-container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+    }
+
+    .projection-card {
+        background: linear-gradient(135deg, #083743, #0a4f5f);
+        padding: 35px;
+        border-radius: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        transition: transform 0.3s;
+    }
+
+    .projection-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .projection-card h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .projection-card p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #d4edf2;
+    }
+
+    .highlight {
+        color: #6ee0f5;
+        font-weight: 600;
+    }
+
+    /* TIMELINE */
+    .timeline {
+        max-width: 900px;
+        margin: auto;
+        padding: 0 20px 80px;
+    }
+
+    .timeline-item {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .dot {
+        width: 14px;
+        height: 14px;
+        margin-top: 8px;
+        border-radius: 50%;
+        background: #6ee0f5;
+    }
+
+    .timeline-content h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+        color: #cfe9ee;
+        line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 25px;
+        color: #8fbfc8;
+        font-size: 14px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        nav {
+            display: none;
+        }
+
+        .page-header h1 {
+            font-size: 34px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Info</a>
+    <a href="team.html">Team</a>
+    <a href="projection.html">Projection</a>
+    <a href="engage.html">Engage</a>
+</nav>
+
+    <a href="#" class="sign-btn">Sign</a>
+</header>
+
+<section class="page-header">
+    <h1>Our Projection</h1>
+    <p>
+        A forward-looking plan focused on sustainable growth, creative excellence,
+        and global recognition of Ugandan storytelling.
+    </p>
+</section>
+
+<section class="projection-container">
+    <div class="projection-card">
+        <h2>📈 Growth Strategy</h2>
+        <p>
+            Expanding production capacity and investing in talent development to
+            achieve <span class="highlight">consistent, high-quality output</span>
+            in film and digital media.
+        </p>
+    </div>
+
+    <div class="projection-card">
+        <h2>🌍 Global Reach</h2>
+        <p>
+            Positioning Ugandan stories on international platforms and festivals
+            through strategic partnerships and digital distribution.
+        </p>
+    </div>
+
+    <div class="projection-card">
+        <h2>🎓 Talent Development</h2>
+        <p>
+            Training writers, directors, and filmmakers with modern techniques
+            while preserving cultural authenticity.
+        </p>
+    </div>
+
+    <div class="projection-card">
+        <h2>💼 Industry Impact</h2>
+        <p>
+            Creating jobs, boosting careers, and strengthening the creative
+            economy within Uganda and beyond.
+        </p>
+    </div>
+</section>
+
+<section class="timeline">
+    <div class="timeline-item">
+        <div class="dot"></div>
+        <div class="timeline-content">
+            <h3>2026 – Foundation</h3>
+            <p>
+                Strengthen core production teams and launch flagship film projects.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="dot"></div>
+        <div class="timeline-content">
+            <h3>2027 – Expansion</h3>
+            <p>
+                Expand collaborations, enter regional film markets, and scale training programs.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="dot"></div>
+        <div class="timeline-content">
+            <h3>2028 – Global Presence</h3>
+            <p>
+                Achieve international recognition and distribution of Ugandan productions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 ForeNest Uganda. All rights reserved.
+</footer>
+
+</body>
+</html>

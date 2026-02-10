@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForeNest Uganda | Info</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #0b2b33, #020d12);
+        color: #ffffff;
+    }
+
+    /* NAVBAR */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 8%;
+    }
+
+    nav a {
+        color: #b6d6db;
+        text-decoration: none;
+        margin: 0 18px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    nav a.active {
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .sign-btn {
+        background: #0e5c6b;
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* PAGE HEADER */
+    .page-header {
+        text-align: center;
+        padding: 70px 20px 40px;
+    }
+
+    .page-header h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .page-header p {
+        color: #cde6eb;
+        max-width: 650px;
+        margin: auto;
+        line-height: 1.7;
+    }
+
+    /* INFO SECTIONS */
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .card {
+        background: linear-gradient(135deg, #083743, #0a4f5f);
+        padding: 35px;
+        border-radius: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+
+    .card p {
+        color: #d4edf2;
+        line-height: 1.7;
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 25px;
+        color: #8fbfc8;
+        font-size: 14px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        nav {
+            display: none;
+        }
+
+        .page-header h1 {
+            font-size: 34px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Info</a>
+    <a href="team.html">Team</a>
+    <a href="projection.html">Projection</a>
+    <a href="engage.html">Engage</a>
+</nav>
+
+    </nav>
+    <a href="#" class="sign-btn">Sign</a>
+</header>
+
+<section class="page-header">
+    <h1>About ForeNest Uganda</h1>
+    <p>
+        ForeNest Uganda is a creative platform focused on transforming Ugandan stories
+        into world-class entertainment through film, storytelling, and cultural innovation.
+    </p>
+</section>
+
+<section class="container">
+    <div class="card">
+        <h2>🎬 Our Mission</h2>
+        <p>
+            To empower Ugandan storytellers by providing professional tools, mentorship,
+            and opportunities that elevate local narratives to global standards.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🌍 Our Vision</h2>
+        <p>
+            A thriving entertainment industry where indigenous Ugandan culture is preserved,
+            celebrated, and shared with the world through modern filmmaking.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🎥 What We Do</h2>
+        <p>
+            • Film production & script development<br>
+            • Talent development & career growth<br>
+            • Cultural storytelling & documentation<br>
+            • Industry networking & collaboration
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🤝 Why ForeNest</h2>
+        <p>
+            We bridge the gap between creativity and opportunity, ensuring artists,
+            filmmakers, and writers grow professionally while staying true to their roots.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 ForeNest Uganda. All rights reserved.
+</footer>
+
+</body>
+</html>
