@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ForeNest Uganda | Team</title>
+<title> | Team</title>
+<link rel="icon" href="logo.png" type="image/png">
 
 <style>
     * {
@@ -26,6 +27,30 @@
         align-items: center;
         padding: 25px 8%;
     }
+    /* Hamburger */
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    width:26px;
+    height:3px;
+    background:white;
+    transition:0.3s;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform:rotate(45deg) translate(5px,5px);
+}
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+.menu-toggle.active span:nth-child(3){
+    transform:rotate(-45deg) translate(6px,-6px);
+}
 
     nav a {
         color: #b6d6db;
@@ -150,16 +175,20 @@
 <header>
     <nav>
          <nav>
-    <a href="index.html">Home</a>
+    <a href="home.html">Home</a>
     <a href="info.html">Info</a>
     <a href="team.html">Team</a>
     <a href="projection.html">Projection</a>
     <a href="engage.html">Engage</a>
-</nav>
 
-    </nav>
-    <a href="#" class="sign-btn">Sign</a>
+    
+    
 </header>
+<div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
 <section class="page-header">
     <h1>Meet Our Team</h1>
@@ -171,8 +200,8 @@
 
 <section class="team-container">
     <div class="member">
-        <div class="avatar">A</div>
-        <h2>Alex Kato</h2>
+        <div class="avatar"><img src="justin.png" alt="justin" class="avatar"></div>
+        <h2>Opio Justin Polycarp</h2>
         <span>Founder & Creative Director</span>
         <p>
             Leads creative strategy, storytelling direction, and oversees all
